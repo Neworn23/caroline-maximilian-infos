@@ -82,10 +82,10 @@
 
     /* PROGRAM */
     .program-bg{background:var(--white)}
-    .days-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:2rem;background:var(--border)}
+    .days-grid{display:grid;grid-template-columns:1fr;gap:2rem;margin-top:2rem}
     .day-card{background:var(--white);padding:1.75rem 1.5rem}
     .day-card.featured{background:var(--off)}
-    .day-date{font-family:var(--serif-sc);font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--faint);margin-bottom:1.25rem;font-weight:300}
+    .day-date{font-family:var(--serif-sc);font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--faint);margin-bottom:1rem;font-weight:300;line-height:1.7}.day-date span{display:block;font-size:0.58rem;letter-spacing:0.22em;color:var(--olive);margin-top:0.1rem}
     .day-title{font-family:var(--serif);font-size:1.9rem;font-weight:300;font-style:italic;color:var(--ink);margin-bottom:0.4rem}
     .day-venue{font-size:0.75rem;color:var(--faint);margin-bottom:1.25rem;line-height:1.65}
     .day-venue a{color:var(--olive);text-decoration:none}
@@ -97,7 +97,7 @@
 
     /* LOCATIONS */
     .loc-bg{background:var(--off)}
-    .loc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2px;margin-top:2rem;background:var(--border)}
+    .loc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:2rem;background:var(--border)}
     .loc-card{background:var(--off);padding:1.5rem 1.25rem;transition:background 0.2s}
     .loc-card:hover{background:var(--white)}
     .loc-icon{margin-bottom:1rem;color:var(--olive)}
@@ -108,7 +108,7 @@
 
     /* TRAVEL */
     .travel-bg{background:var(--white)}
-    .travel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2px;margin-top:2rem;background:var(--border)}
+    .travel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:2rem;background:var(--border)}
     .tc{padding:1.5rem 1.25rem;background:var(--white)}
     .tc-icon{margin-bottom:1rem;color:var(--olive)}
     .tc-title{font-family:var(--serif);font-size:1.05rem;font-style:italic;color:var(--ink);margin-bottom:0.5rem}
@@ -116,7 +116,7 @@
 
     /* HOTELS */
     .hotels-bg{background:var(--off)}
-    .hotels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2px;margin-top:2rem;background:var(--border)}
+    .hotels-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:2rem;background:var(--border)}
     .hcard{background:var(--off);overflow:hidden;transition:background 0.2s}
     .hcard:hover{background:var(--white)}
     .hcard-tag{font-family:var(--serif-sc);padding:0.5rem 1.25rem;background:var(--white);font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--faint);font-weight:300;border-bottom:1px solid var(--border)}
@@ -140,7 +140,7 @@
 
     /* ACTIVITIES */
     .act-bg{background:var(--white)}
-    .act-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:2px;margin-top:2rem;background:var(--border)}
+    .act-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:2rem;background:var(--border)}
     .acard{padding:1.25rem 1.25rem;background:var(--white)}
     .a-icon{margin-bottom:0.9rem;color:var(--olive)}
     .a-title{font-family:var(--serif);font-size:1rem;font-style:italic;color:var(--ink);margin-bottom:0.4rem}
@@ -149,7 +149,7 @@
     /* TIPS */
     .tips-bg{background:var(--off)}
     .tips-lead{font-size:0.82rem;color:var(--muted);max-width:500px;line-height:1.9;margin-bottom:2rem;font-style:italic}
-    .tips-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.75rem}
+    .tips-cols{display:grid;grid-template-columns:repeat(2,1fr);gap:1.75rem}
     .tgroup h4{font-family:var(--serif-sc);font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--olive);margin-bottom:1.25rem;padding-bottom:0.6rem;border-bottom:1px solid var(--border);font-weight:300}
     .titem{padding:0.4rem 0;border-bottom:1px solid var(--border);display:flex;gap:0.8rem;align-items:flex-start}
     .titem:last-child{border-bottom:none}
@@ -185,7 +185,7 @@
     .resto-card .tnote{grid-column:1/3;font-size:0.72rem;color:var(--faint);font-style:italic;margin-top:0.1rem;line-height:1.35}
 
   
-    .loc-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:1px;background:var(--border)}
+    .loc-strip{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:1px;background:var(--border)}
     .loc-strip-item{background:var(--off);padding:1.25rem 1.5rem;transition:background 0.2s}
     .loc-strip-item:hover{background:var(--white)}
     .loc-strip-icon{font-size:0.8rem;margin-bottom:0.5rem;color:var(--olive)}
@@ -198,44 +198,33 @@
     .loc-strip-links{font-size:0.62rem;color:var(--olive)}
     .loc-strip-links a{color:var(--olive);text-decoration:none;border-bottom:1px solid var(--olive-pale);padding-bottom:1px}
     .loc-strip-links a:hover{border-color:var(--olive)}
-
-  
     /* ── RESPONSIVE ── */
 
-    /* Large screens */
     @media(min-width:1400px){
       .inner{max-width:900px}
-      .inner-wide{max-width:1300px}
-      section{padding:6rem 3rem}
-      .tips-cols{grid-template-columns:repeat(4,1fr)}
     }
 
-    /* Tablet landscape */
     @media(max-width:1100px){
-      .inner{max-width:100%;padding:0}
+      .inner{max-width:100%}
       .tips-cols{grid-template-columns:repeat(2,1fr)}
-      .hotels-grid{grid-template-columns:repeat(2,1fr)}
-      .hcard.featured-hotel{grid-column:1/-1}
     }
 
-    /* Tablet portrait */
     @media(max-width:900px){
       nav{padding:1rem 2rem}
       .nav-links{gap:1.5rem}
       .nav-links a{font-size:0.58rem}
       section{padding:4rem 1.75rem}
-      .days-grid{grid-template-columns:repeat(2,1fr)}
       .gallery-grid{grid-template-columns:repeat(2,1fr)}
-      .loc-strip{grid-template-columns:repeat(2,1fr)}
-      .act-grid{grid-template-columns:repeat(4,1fr)}
+      .act-grid{grid-template-columns:repeat(2,1fr)}
       .travel-grid{grid-template-columns:repeat(3,1fr)}
       .hotels-grid{grid-template-columns:repeat(2,1fr)}
-      .tips-cols{grid-template-columns:repeat(2,1fr)}
+      .hcard.featured-hotel{grid-column:1/-1}
       .hcard.featured-hotel .hcard-body{grid-template-columns:1fr}
       .hotel-badges{grid-column:1;flex-direction:row;flex-wrap:wrap;gap:0.4rem;padding-top:0.75rem}
+      .tips-cols{grid-template-columns:repeat(2,1fr)}
+      .rsvp-form{margin-top:1.75rem}
     }
 
-    /* Mobile */
     @media(max-width:640px){
       nav{padding:1rem 1.25rem}
       .nav-links{display:none}
@@ -249,14 +238,13 @@
       .cd-sep{font-size:1.8rem;padding:0 0.25rem}
       section{padding:3.5rem 1.25rem}
       .s-title{font-size:1.75rem}
-      .days-grid{grid-template-columns:1fr}
-      .day-card{padding:1.5rem 1.25rem}
+      .days-row{grid-template-columns:100%}
       .gallery-grid{grid-template-columns:1fr}
       .gallery-item{aspect-ratio:16/9}
-      .loc-strip{grid-template-columns:1fr 1fr}
+      .loc-strip{grid-template-columns:1fr}
       .loc-strip-item{padding:1rem}
       .loc-strip-name{font-size:0.88rem}
-      .travel-grid{grid-template-columns:1fr 1fr}
+      .travel-grid{grid-template-columns:repeat(2,1fr)}
       .act-grid{grid-template-columns:repeat(2,1fr)}
       .hotels-grid{grid-template-columns:1fr}
       .hcard.featured-hotel{grid-column:1}
@@ -264,23 +252,17 @@
       .hotel-badges{grid-column:1;flex-direction:row;flex-wrap:wrap;gap:0.35rem;padding-top:0.75rem}
       .hotel-badge{font-size:0.5rem;padding:0.25rem 0.6rem}
       .tips-cols{grid-template-columns:1fr}
-      .rsvp-form{margin-top:1.75rem}
-      .fr-grid{grid-template-columns:1fr}
       footer{padding:2.5rem 1.25rem}
       .fnav{gap:1.25rem}
     }
 
-    /* Small mobile */
     @media(max-width:400px){
       .loc-strip{grid-template-columns:1fr}
       .travel-grid{grid-template-columns:1fr}
       .act-grid{grid-template-columns:1fr}
-      .cd-grid{gap:0}
       .cd-sep{padding:0 0.15rem}
     }
 
-  
-    .inner-wide{max-width:1100px;margin:0 auto;padding:0 0.5rem}
 
   </style>
 </head>
@@ -345,7 +327,7 @@
     <div class="days-grid">
 
       <div class="day-card reveal">
-        <p class="day-date">Donnerstag · 27. Mai</p>
+        <p class="day-date">Donnerstag · 27. Mai<span>Welcome Evening</span></p>
         <h3 class="day-title">Welcome Evening</h3>
         <p class="day-venue">Porxada de Sa Torre<br><a href="https://www.torredecanyamel.com/de/gastronomie/porxada-de-sa-torre/" target="_blank">→ Website</a></p>
         <ul class="tl">
@@ -354,7 +336,7 @@
       </div>
 
       <div class="day-card featured reveal">
-        <p class="day-date">Freitag · 28. Mai · Zeremonie</p>
+        <p class="day-date">Freitag · 28. Mai<span>Zeremonie</span></p>
         <h3 class="day-title">Trauung</h3>
         <p class="day-venue">Iglesia Nova · Son Servera</p>
         <ul class="tl">
@@ -364,7 +346,7 @@
       </div>
 
       <div class="day-card featured reveal">
-        <p class="day-date">Freitag · 28. Mai · Feier</p>
+        <p class="day-date">Freitag · 28. Mai<span>Empfang & Party</span></p>
         <h3 class="day-title">Empfang & Party</h3>
         <p class="day-venue">Es Calderes · Son Servera</p>
         <ul class="tl">
@@ -375,13 +357,14 @@
       </div>
 
       <div class="day-card reveal">
-        <p class="day-date">Samstag · 29. Mai</p>
+        <p class="day-date">Samstag · 29. Mai<span>Get Together</span></p>
         <h3 class="day-title">Get Together</h3>
         <p class="day-venue">S'Oratge d'es Port Vell<br><a href="https://soratge.es/" target="_blank">→ Website</a></p>
         <ul class="tl">
           <li class="tl-item"><span class="tl-time">12:00</span><span class="tl-desc">Strand, Paella, Ausklingen</span></li>
         </ul>
       </div>
+      </div><!-- end row 2 -->
 
     </div>
   </div>
@@ -484,6 +467,7 @@
       </div>
       <div class="hcard reveal"><div class="hcard-tag">Alle Optionen</div><div class="hcard-body"><h3 class="hcard-name">Booking.com</h3><p class="hcard-loc">📍 Son Servera</p><p class="hcard-desc">Vollständige Unterkunftsauswahl von Budget bis Luxus.</p><a href="https://www.booking.com/city/es/son-servera.de.html" class="hcard-link" target="_blank">Alle Hotels →</a></div></div>
       <div class="hcard reveal"><div class="hcard-tag">Golf Resort ★★★★</div><div class="hcard-body"><h3 class="hcard-name">Pula Golf Resort</h3><p class="hcard-loc">📍 Carretera Son Servera-Capdepera, km 3</p><p class="hcard-desc">4-Sterne direkt am Golfplatz. Ruhig, grün, perfekt für Golfer.</p><a href="https://www.pulagolf.com/AL/home.html" class="hcard-link" target="_blank">Website →</a></div></div>
+      <div class="hcard reveal"><div class="hcard-tag">Agroturismo · Son Servera</div><div class="hcard-body"><h3 class="hcard-name">Ses Cases de Fetget</h3><p class="hcard-loc">📍 Ctra. Vella Son Servera-Artà, km 1</p><p class="hcard-desc">Charmantes Landhotel direkt in Son Servera — Pool, Garten, Restaurant mit mallorquinischer Küche. 15 Min. zu Fuß zur Iglesia Nova.</p><a href="https://www.booking.com/hotel/es/fetget-son-servera.de.html" class="hcard-link" target="_blank">Booking.com →</a></div></div>
       <div class="hcard reveal"><div class="hcard-tag">Boutique · Son Servera</div><div class="hcard-body"><h3 class="hcard-name">Son Corb Boutique Hotel</h3><p class="hcard-loc">📍 Son Servera</p><p class="hcard-desc">Sehr gut bewertet, kleines feines Boutique-Hotel. Frühzeitig buchen.</p><a href="https://www.tripadvisor.de/Hotel_Review-g580317-d569702-Reviews-Son_Corb_Boutique_Hotel-Son_Servera_Majorca_Balearic_Islands.html" class="hcard-link" target="_blank">TripAdvisor →</a></div></div>
     </div>
   </div>
@@ -541,11 +525,9 @@
         <div class="titem"><div class="tbullet"></div><div><div class="tname tstar">NU Mallorca ★</div><div class="tnote">Beachclub — gute Vibes, tolles Essen direkt am Meer.</div></div></div>
         <div class="titem"><div class="tbullet"></div><div><div class="tname">Pizzeria Panetosto</div><div class="tnote">Lokaler Liebling — gute Pizza, entspannte Atmosphäre.</div></div></div>
         <div class="titem"><div class="tbullet"></div><div><div class="tname">Porto Cristo im Hafen</div><div class="tnote">Schöne Hafenkulisse, gute Fischküche.</div></div></div>
-        <div class="titem"><div class="tbullet"></div><div><div class="tname">Restaurante S'Oratge</div><div class="tnote">Italienisch direkt am Meer mit Live-Musik — auch unser Get-Together-Spot!</div></div></div>
       </div>
       <div class="tgroup reveal">
         <h4>Restaurants · Dinner</h4>
-        <div class="titem"><div class="tbullet"></div><div><div class="tname">Hotel Creu de Tau</div><div class="tnote">Teuer, aber worth it. Bar in einer Kapelle.</div></div></div>
         <div class="titem"><div class="tbullet"></div><div><div class="tname">ROKA</div><div class="tnote">Sushi, auch in Dubai. Cool, etwas teurer.</div></div></div>
         <div class="titem"><div class="tbullet"></div><div><div class="tname">Carossa Hotel</div><div class="tnote">Unglaubliche Aussicht. Service mittel.</div></div></div>
         <div class="titem"><div class="tbullet"></div><div><div class="tname">Peperoncino / La Bruschetta</div><div class="tnote">Beide italienisch, beide günstiger, beide gut.</div></div></div>
