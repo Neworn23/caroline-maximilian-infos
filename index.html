@@ -85,7 +85,7 @@
     .program-bg{background:var(--white)}
     .days-grid{display:grid;grid-template-columns:1fr;gap:2rem;margin-top:2rem}
     .day-card{background:var(--white);padding:1.75rem 1.5rem}
-    .day-card.featured{background:var(--off)}
+    .day-card.featured{background:var(--white)}
     .day-date{font-family:var(--serif-sc);font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--faint);margin-bottom:1rem;font-weight:300;line-height:1.7}.day-date span{display:block;font-size:0.58rem;letter-spacing:0.22em;color:var(--olive);margin-top:0.1rem}
     .day-title{font-family:var(--serif);font-size:1.9rem;font-weight:300;font-style:italic;color:var(--ink);margin-bottom:0.4rem}
     .day-venue{font-size:0.75rem;color:var(--faint);margin-bottom:1.25rem;line-height:1.65}
@@ -298,7 +298,8 @@
     <h1 class="hero-names" style="animation:fadeUp 1s ease both 0.4s">Caroline<em>&</em>Maximilian</h1>
     <div class="hero-rule" style="animation:fadeUp 1s ease both 0.7s"></div>
     <p class="hero-date" style="animation:fadeUp 1s ease both 0.8s">28. Mai 2027</p>
-    <p class="hero-loc" style="animation:fadeUp 1s ease both 0.95s">Iglesia Nova · Son Servera · Mallorca</p>
+    <p class="hero-loc" style="animation:fadeUp 1s ease both 0.9s">27. — 30. Mai 2027</p>
+    <p class="hero-loc" style="animation:fadeUp 1s ease both 0.95s;margin-top:0.4rem">Son Servera · Mallorca</p>
   </div>
   <div class="hero-scroll">
     <div class="scroll-bar"></div>
@@ -326,49 +327,46 @@
     <h2 class="s-title reveal">Drei Tage. <em>Son Servera.</em></h2>
     <div class="s-rule reveal"></div>
     <div class="days-grid">
-
-      <div class="day-card reveal">
-        <p class="day-date">Donnerstag · 27. Mai<span>Welcome Evening</span></p>
-        <h3 class="day-title">Welcome Evening</h3>
-        <p class="day-venue">Porxada de Sa Torre<br><a href="https://www.torredecanyamel.com/de/gastronomie/porxada-de-sa-torre/" target="_blank">→ Website</a></p>
-        <ul class="tl">
-          <li class="tl-item"><span class="tl-time">19:00</span><span class="tl-desc">Ankunft</span></li>
-        </ul>
+      <div class="days-row">
+        <div class="day-card reveal">
+          <p class="day-date">Donnerstag · 27. Mai</p>
+          <h3 class="day-title">Welcome Evening</h3>
+          <p class="day-venue">Porxada de Sa Torre<br><a href="https://www.torredecanyamel.com/de/gastronomie/porxada-de-sa-torre/" target="_blank">→ Website</a></p>
+          <ul class="tl">
+            <li class="tl-item"><span class="tl-time">19:00</span><span class="tl-desc">Ankunft</span></li>
+          </ul>
+        </div>
+        <div class="day-card reveal">
+          <p class="day-date">Freitag · 28. Mai · Zeremonie</p>
+          <h3 class="day-title">Trauung</h3>
+          <p class="day-venue">Iglesia Nova · Son Servera</p>
+          <ul class="tl">
+            <li class="tl-item"><span class="tl-time">17:00</span><span class="tl-desc">Kirchliche Trauung</span></li>
+          </ul>
+        </div>
       </div>
-
-      <div class="day-card featured reveal">
-        <p class="day-date">Freitag · 28. Mai<span>Zeremonie</span></p>
-        <h3 class="day-title">Trauung</h3>
-        <p class="day-venue">Iglesia Nova · Son Servera</p>
-        <ul class="tl">
-          <li class="tl-item"><span class="tl-time">17:00</span><span class="tl-desc">Kirchliche Trauung</span></li>
-          <li class="tl-item"><span class="tl-time">18:00</span><span class="tl-desc">Sektempfang</span></li>
-        </ul>
+      <div class="days-row">
+        <div class="day-card reveal">
+          <p class="day-date">Freitag · 28. Mai · Feier</p>
+          <h3 class="day-title">Empfang & Party</h3>
+          <p class="day-venue">Es Calderes · Son Servera</p>
+          <ul class="tl">
+            <li class="tl-item"><span class="tl-time">19:00</span><span class="tl-desc">Aperitivo</span></li>
+            <li class="tl-item"><span class="tl-time">21:00</span><span class="tl-desc">Dinner</span></li>
+            <li class="tl-item"><span class="tl-time">22:30</span><span class="tl-desc">Party — open end</span></li>
+          </ul>
+        </div>
+        <div class="day-card reveal">
+          <p class="day-date">Samstag · 29. Mai</p>
+          <h3 class="day-title">Get Together</h3>
+          <p class="day-venue">S’Oratge d’es Port Vell<br><a href="https://soratge.es/" target="_blank">→ Website</a></p>
+          <ul class="tl">
+            <li class="tl-item"><span class="tl-time">12:00</span><span class="tl-desc">Strand, Paella, Ausklingen</span></li>
+          </ul>
+        </div>
       </div>
-
-      <div class="day-card featured reveal">
-        <p class="day-date">Freitag · 28. Mai<span>Empfang & Party</span></p>
-        <h3 class="day-title">Empfang & Party</h3>
-        <p class="day-venue">Es Calderes · Son Servera</p>
-        <ul class="tl">
-          <li class="tl-item"><span class="tl-time">19:00</span><span class="tl-desc">Aperitivo</span></li>
-          <li class="tl-item"><span class="tl-time">21:00</span><span class="tl-desc">Dinner</span></li>
-          <li class="tl-item"><span class="tl-time">22:30</span><span class="tl-desc">Party — open end</span></li>
-        </ul>
-      </div>
-
-      <div class="day-card reveal">
-        <p class="day-date">Samstag · 29. Mai<span>Get Together</span></p>
-        <h3 class="day-title">Get Together</h3>
-        <p class="day-venue">S'Oratge d'es Port Vell<br><a href="https://soratge.es/" target="_blank">→ Website</a></p>
-        <ul class="tl">
-          <li class="tl-item"><span class="tl-time">12:00</span><span class="tl-desc">Strand, Paella, Ausklingen</span></li>
-        </ul>
-      </div>
-      </div><!-- end row 2 -->
-
     </div>
-  </div>
+
 </section>
 
 <!-- GALLERY + LOCATIONS -->
